@@ -5,8 +5,8 @@
 //5. Calculate each value in the difference array to find the total distance
 
 
-let group1LocationIds = []
-let group2LocationIds = []
+export let group1LocationIds = []
+export let group2LocationIds = []
 let differences = []
 
 async function getInputData() {
@@ -28,7 +28,7 @@ async function getInputData() {
         .catch((e) => console.error(e, 'error'))
 }
 
-async function rearrangeInputData() {
+export async function rearrangeInputData() {
     await getInputData()
 
     group1LocationIds.sort((a, b) => a - b)
@@ -63,4 +63,5 @@ async function getTotalDistanceOfLists() {
     return totalDistance
 }
 
-getTotalDistanceOfLists()
+// getTotalDistanceOfLists()
+
