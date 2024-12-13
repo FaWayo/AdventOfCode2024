@@ -34,8 +34,8 @@ export async function rearrangeInputData() {
     group1LocationIds.sort((a, b) => a - b)
     group2LocationIds.sort((a, b) => a - b)
 
-    console.log(group1LocationIds, 'group 1 list')
-    console.log(group2LocationIds, 'group 2 list')
+    // console.log(group1LocationIds, 'group 1 list')
+    // console.log(group2LocationIds, 'group 2 list')
 }
 
 async function compareGroups() {
